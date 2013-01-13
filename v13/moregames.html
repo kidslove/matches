@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+	<title>More Apps Page for Matches Game</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<style>
+		body {
+			margin: 0;
+			font-size: 26px;
+			font-family: Helvetica;
+			
+		}
+		#content {
+		margin: 5px 5px 5px 5px;
+		padding: 2px 2px 2px 2px;
+		
+		}
+		.fixed-width {
+			font-family: Courier;
+		}
+	</style>
+
+<script type="text/javascript">
+window.onload=func
+function func()
+{	
+	var link = new Array()	
+	link[0]='<a href="http://itunes.apple.com/app/id495510341"><img src=BubbleGame.jpg width="100%" VSPACE=5></a>'
+	link[1]='<a href="http://itunes.apple.com/app/id464657222"><img src=Princess.jpg width="100%" VSPACE=5></a>'
+	link[2]='<a href="http://itunes.apple.com/app/id464872597"><img src=SeaLife.jpg width="100%" VSPACE=5></a>'
+	link[3]='<a href="http://itunes.apple.com/app/id536933223"><img src=FarmAnimals.jpg width="100%" VSPACE=5></a>'
+
+	var startNum = Math.floor((Math.random() * (link.length-1)))
+	for (var i=0;i<link.length;i++)
+	{	
+		startNum += 1
+		if (startNum >= link.length) { startNum = 0; }
+		document.getElementById("banner"+[i]).innerHTML = link[startNum]
+	}
+}
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37093446-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body>
+<div id="content">
+<center>
+
+<div>
+<a href="http://itunes.apple.com/app/id517701766"><img src="DragonMaze.jpg" width="100%" VSPACE=0></a>
+</div>
+
+<div id="banner0"></div>
+<div id="banner1"></div>
+<div id="banner2"></div>
+<div id="banner3"></div>
+<div id="banner4"></div>
+
+<p align="center" style="font-size:26px"><b>We wish you a lot of fun with our games!</b></p>
+<p align="center" style="font-size:18px">To get the latest News and Updates please Like us on Facebook!</p>
+<p align="center" style="font-size:18px"><a href="http://www.facebook.com/kidsloveit">http://www.facebook.com/kidsloveit</a> </p>
+<p align="center" style="font-size:14px">Music: Kevin MacLeod </p>
+<p align="center" style="font-size:6px">v13 remote</p>
+
+</center>
+</div>
+</body>
+</html>
