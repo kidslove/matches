@@ -21,16 +21,23 @@
 	</style>
 
 <script type="text/javascript">
-	var imageURLs = [ 
-			'<a href="http://itunes.apple.com/app/id689658752"><img src="Banner_big_pony.jpg" width="100%"></a>',
-			'<a href="http://itunes.apple.com/app/id689658752"><img src="Banner_big_cars.jpg" width="100%"></a>',
-		];
-	function getURL() {
-		var randomIndex = Math.floor(Math.random() * imageURLs.length);
-		console.log('imageURLs.length: ' + imageURLs.length);
-		console.log('randomIndex: ' + randomIndex);
-		return imageURLs[randomIndex];
+window.onload=func
+function func()
+{	
+	var link = new Array()	
+	link[0]='<a href="http://itunes.apple.com/app/id495510341"><img src=BubbleGame.jpg width="100%" VSPACE=5></a>'
+	link[1]='<a href="http://itunes.apple.com/app/id464657222"><img src=Princess.jpg width="100%" VSPACE=5></a>'
+	link[2]='<a href="http://itunes.apple.com/app/id464872597"><img src=SeaLife.jpg width="100%" VSPACE=5></a>'
+	link[3]='<a href="http://itunes.apple.com/app/id536933223"><img src=FarmAnimals.jpg width="100%" VSPACE=5></a>'
+
+	var startNum = Math.floor((Math.random() * (link.length-1)))
+	for (var i=0;i<link.length;i++)
+	{	
+		startNum += 1
+		if (startNum >= link.length) { startNum = 0; }
+		document.getElementById("banner"+[i]).innerHTML = link[startNum]
 	}
+}
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -47,7 +54,15 @@
 <div id="content">
 <center>
 
-<script type="text/javascript"> document.write(getURL()) </script>
+<div>
+<a href="http://itunes.apple.com/app/id517701766"><img src="DragonMaze.jpg" width="100%" VSPACE=0></a>
+</div>
+
+<div id="banner0"></div>
+<div id="banner1"></div>
+<div id="banner2"></div>
+<div id="banner3"></div>
+<div id="banner4"></div>
 
 <p align="center" style="font-size:26px"><b>We wish you a lot of fun with our games!</b></p>
 <p align="center" style="font-size:18px">To get the latest News and Updates please Like us on Facebook!</p>
